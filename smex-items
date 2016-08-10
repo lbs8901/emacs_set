@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- helm-projectile-find-files-eshell-command-on-file-action
- helm-projectile-find-other-file
+ package-list-packages
+ package-install
+ comment-region
+ comment-box
+ load-file
  find-file
- bookmark-jump
- bookmark-set
- dired
- helm-M-x
+ eshell
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,13 @@
  (dired . 1)
  (bookmark-set . 7)
  (bookmark-jump . 1)
- (find-file . 1)
+ (find-file . 3)
  (helm-projectile-find-other-file . 1)
  (helm-projectile-find-files-eshell-command-on-file-action . 1)
+ (package-install . 5)
+ (load-file . 4)
+ (eshell . 1)
+ (package-list-packages . 4)
+ (comment-box . 1)
+ (comment-region . 1)
 )

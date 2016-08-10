@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/source/docker/edupang_docker/app/edupang/")
+("~/.emacs.d/" "~/source/docker/edupang_docker/app/edupang/" "~/osx_setting/bs_osx_setting/")
