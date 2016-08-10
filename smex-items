@@ -1,0 +1,25 @@
+
+;; ----- smex-history -----
+(
+ helm-projectile-find-files-eshell-command-on-file-action
+ helm-projectile-find-other-file
+ find-file
+ bookmark-jump
+ bookmark-set
+ dired
+ helm-M-x
+)
+
+;; ----- smex-data -----
+(
+ (cd . 1)
+ (list-tags . 1)
+ (helm-configuration . 1)
+ (helm-M-x . 2)
+ (dired . 1)
+ (bookmark-set . 7)
+ (bookmark-jump . 1)
+ (find-file . 1)
+ (helm-projectile-find-other-file . 1)
+ (helm-projectile-find-files-eshell-command-on-file-action . 1)
+)

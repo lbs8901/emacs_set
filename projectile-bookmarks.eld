@@ -1,0 +1,1 @@
+("~/source/docker/edupang_docker/app/edupang/" "~/.emacs.d/")

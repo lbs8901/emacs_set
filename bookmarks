@@ -1,0 +1,35 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("edupang_docker"
+ (filename . "~/source/docker/edupang_docker/")
+ (front-context-string . "app\n  -rw-r--r--")
+ (rear-context-string . "40 Jul 12 13:46 ")
+ (position . 515))
+("edupnag_b2b_api"
+ (filename . "~/source/docker/edupang_docker/app/edupnag_b2b_api/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "44 Jul 29 19:07 ")
+ (position . 264))
+("edupang_mobile"
+ (filename . "~/source/docker/edupang_docker/app/edupang_mobile/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . "44 Aug  9 15:42 ")
+ (position . 267))
+("edupang_b2b"
+ (filename . "~/source/docker/edupang_docker/app/edupang_b2b/")
+ (front-context-string . ".DS_Store\n  drwx")
+ (rear-context-string . "48 Aug  1 20:59 ")
+ (position . 253))
+("edupang_api"
+ (filename . "~/source/docker/edupang_docker/app/edupang_api/")
+ (front-context-string . ".DS_Store\n  drwx")
+ (rear-context-string . "96 Jul 26 15:55 ")
+ (position . 264))
+("edupang"
+ (filename . "~/source/docker/edupang_docker/app/edupang/")
+ (front-context-string . ".DS_Store\n  drwx")
+ (rear-context-string . "48 Jul 26 15:41 ")
+ (position . 248))
+)
