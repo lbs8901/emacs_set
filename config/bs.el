@@ -12,20 +12,31 @@
 ;;disable auto save
 (setq auto-save-default nil)
 
-(eval-after-load 'php-mode
-  '(require 'php-ext))
+;; (eval-after-load 'php-mode
+;;   '(require 'php-ext))
 
-(add-hook 'php-mode-hook (lambda ()
-    (defun ywb-php-lineup-arglist-intro (langelem)
-      (save-excursion
-        (goto-char (cdr langelem))
-        (vector (+ (current-column) c-basic-offset))))
-    (defun ywb-php-lineup-arglist-close (langelem)
-      (save-excursion
-        (goto-char (cdr langelem))
-        (vector (current-column))))
-    (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
-    (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
+
+;; (require 'web-mode)
+;; (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+;; (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+
+;; (add-hook 'php-mode-hook (lambda ()
+;;     (defun ywb-php-lineup-arglist-intro (langelem)
+;;       (save-excursion
+;;         (goto-char (cdr langelem))
+;;         (vector (+ (current-column) c-basic-offset))))
+;;     (defun ywb-php-lineup-arglist-close (langelem)
+;;       (save-excursion
+;;         (goto-char (cdr langelem))
+;;         (vector (current-column))))
+;;     (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
+;;     (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
 
 (defun unindent-closure ()
   "Fix php-mode indent for closures"
@@ -59,9 +70,9 @@
       (when (looking-at "^    ")
         (replace-match "")))))
 
-(require 'mmm-auto)
-(setq mmm-global-mode 'maybe)
-(mmm-add-mode-ext-class 'html-mode "\\.php\\'" 'html-php)
+;; (require 'mmm-auto)
+;; (setq mmm-global-mode 'maybe)
+;; (mmm-add-mode-ext-class 'html-mode "\\.php\\'" 'html-php)
 ;; (mmm-add-mode-ext-class 'html-mode nil 'html-js)
 
 (setq-default truncate-lines t)
@@ -99,5 +110,4 @@
 (global-set-key [C-S-right] 'shift-right)
 (global-set-key [C-S-left] 'shift-left)
 
-
-(setq redisplay-dont-pause t)
+;; (setq redisplay-dont-pause t)
