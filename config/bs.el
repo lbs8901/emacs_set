@@ -130,3 +130,4 @@
 (setq line-move-visual nil)
 
 (global-set-key (kbd "<s-left>") 'beginning-of-line-text)
+;; (helm-resize-mode)
