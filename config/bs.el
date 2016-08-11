@@ -12,31 +12,32 @@
 ;;disable auto save
 (setq auto-save-default nil)
 
-;; (eval-after-load 'php-mode
-;;   '(require 'php-ext))
+(eval-after-load 'php-mode
+  '(require 'php-ext))
 
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
-;; (require 'web-mode)
-;; (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
-;; (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(local-set-key (kbd "RET") 'newline-and-indent)
 
-;; (add-hook 'php-mode-hook (lambda ()
-;;     (defun ywb-php-lineup-arglist-intro (langelem)
-;;       (save-excursion
-;;         (goto-char (cdr langelem))
-;;         (vector (+ (current-column) c-basic-offset))))
-;;     (defun ywb-php-lineup-arglist-close (langelem)
-;;       (save-excursion
-;;         (goto-char (cdr langelem))
-;;         (vector (current-column))))
-;;     (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
-;;     (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
+(add-hook 'php-mode-hook (lambda ()
+    (defun ywb-php-lineup-arglist-intro (langelem)
+      (save-excursion
+        (goto-char (cdr langelem))
+        (vector (+ (current-column) c-basic-offset))))
+    (defun ywb-php-lineup-arglist-close (langelem)
+      (save-excursion
+        (goto-char (cdr langelem))
+        (vector (current-column))))
+    (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
+    (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)))
 
 (defun unindent-closure ()
   "Fix php-mode indent for closures"
@@ -70,10 +71,10 @@
       (when (looking-at "^    ")
         (replace-match "")))))
 
-;; (require 'mmm-auto)
-;; (setq mmm-global-mode 'maybe)
-;; (mmm-add-mode-ext-class 'html-mode "\\.php\\'" 'html-php)
-;; (mmm-add-mode-ext-class 'html-mode nil 'html-js)
+(require 'mmm-auto)
+(setq mmm-global-mode 'maybe)
+(mmm-add-mode-ext-class 'html-mode "\\.php\\'" 'html-php)
+(mmm-add-mode-ext-class 'html-mode nil 'html-js)
 
 (setq-default truncate-lines t)
 
@@ -81,7 +82,7 @@
   (interactive)
   (newline)
   (indent-relative)
-  )
+)
 
 (global-set-key (kbd "C-m") 'custom_newline)
 
@@ -96,11 +97,13 @@
 
 (defun shift-right ()
   (interactive)
-  (shift-region 1))
+  ;;(shift-region 4))
+  (indent-rigidly-right-to-tab-stop))
 
 (defun shift-left ()
   (interactive)
-  (shift-region -1))
+  ;;(shift-region -4))
+  (indent-rigidly-left-to-tab-stop))
 
 ;; Bind (shift-right) and (shift-left) function to your favorite keys. I use
 ;; the following so that Ctrl-Shift-Right Arrow moves selected text one
@@ -111,3 +114,19 @@
 (global-set-key [C-S-left] 'shift-left)
 
 ;; (setq redisplay-dont-pause t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(tab-stop-list
+   (quote
+    (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)))
+)
+
+(global-set-key (kbd "M-x") 'helm-M-x)
+(column-number-mode t)
+(setq line-move-visual nil)
+
+(global-set-key (kbd "<s-left>") 'beginning-of-line-text)
