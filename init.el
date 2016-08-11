@@ -10,7 +10,7 @@
     (or (find-git-repo (buffer-file-name)) (file-name-directory (buffer-file-name)))))
 
 (defun find-git-repo (dir)
-  (if (string= "/" dir) full	
+  (if (string= "/" dir) full
       nil
     (if (file-exists-p (expand-file-name "../.git/" dir))
         dir
@@ -120,7 +120,7 @@
  ;; If there is more than one, they won't work right.
  '(company-tooltip-annotation ((t (:inherit company-tooltip :foreground "yellow")))))
 (global-hl-line-mode 1)
- 
+
 ;; To customize the background color
 (set-face-background 'hl-line "#333")
 (setq ring-bell-function 'ignore)

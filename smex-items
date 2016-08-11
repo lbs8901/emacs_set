@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
- package-install
- comment-region
- comment-box
  load-file
- find-file
+ web-mode
+ package-install
+ nxml-web-mode
+ web-mixed-indentation-mode
  eshell
+ indent-region
 )
 
 ;; ----- smex-data -----
@@ -15,17 +15,45 @@
  (cd . 1)
  (list-tags . 1)
  (helm-configuration . 1)
- (helm-M-x . 2)
+ (helm-M-x . 4)
  (dired . 1)
  (bookmark-set . 7)
  (bookmark-jump . 1)
- (find-file . 3)
+ (find-file . 6)
  (helm-projectile-find-other-file . 1)
  (helm-projectile-find-files-eshell-command-on-file-action . 1)
- (package-install . 5)
- (load-file . 4)
- (eshell . 1)
- (package-list-packages . 4)
+ (package-install . 15)
+ (load-file . 45)
+ (eshell . 6)
+ (package-list-packages . 7)
  (comment-box . 1)
- (comment-region . 1)
+ (comment-region . 3)
+ (magit-status . 7)
+ (magit-commit . 1)
+ (helm-buffers-list . 1)
+ (uncomment-region . 2)
+ (tabify . 1)
+ (tab-to-tab-stop . 2)
+ (sql-indent-line . 6)
+ (sql-accumulate-and-indent . 1)
+ (sql-indent-string . 11)
+ (indent-to . 1)
+ (indent-region . 10)
+ (my-sql-indent-region . 4)
+ (fill-region . 1)
+ (fill-paragraph . 1)
+ (shift-right . 2)
+ (magit-gitignore . 2)
+ (magit-gitignore-locally . 1)
+ (balance-windows . 1)
+ (nxml-web-mode . 5)
+ (webjump . 1)
+ (php-mode . 2)
+ (html-erb-mode . 1)
+ (untabify . 5)
+ (multi-mode . 2)
+ (wmi . 2)
+ (wmi-mode . 2)
+ (web-mixed-indentation-mode . 3)
+ (web-mode . 1)
 )

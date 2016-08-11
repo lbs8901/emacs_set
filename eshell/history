@@ -1,91 +1,3 @@
-ls
-cd
-cd ~/.emacs.d/
-ls
-ls
-ls- al
-ls -al
-ll
-ls -al
-git init
-git status
-ls
-git init
-ls
-git --help
-git config
-git config --local
-git config --local -h
-git config --local origin
-git config --local url
-git config --local master
-git
-git log
-git
-git show
-git
-git init
-ls
-ls
-git remote -v
-git remote show
-git remote show origin
-git remote rm 
-git remote rm origin
-git init
-git remote
-s
-ls
-ls -al
-rm -rf .git/
-git init
-ls -al
-git remote add https://github.com/lbs8901/emacs_set
-git remote add origin https://github.com/lbs8901/emacs_set
-git remote 
-git remote origin
-git remote show origin
-git add .
-git status
-git commit -m "emacs set init"
-git status
-git push -u origin
-git config --global user.name "bslee"
-git config --global user.email "lbs8901@naver.com"
-git push -u origin
-git config --global push.default origin
-git push -u origin
-git config --global push.default
-git config --global push.default unset
-git config
-git config --global
-git config --global --help
-git config --global --remove-section push.default
-git config --global --remove-section push.default
-git config --global --list
-touch ~/.gitconfig
-git config --global --list
-git config --global --unset 
-git config --global --unset user.name
-git config --global --list
-git config --global user.name bslee
-git config --global user.name bslee
-git config --global --list
-git config --global user.email lbs@edupang.com
-git config --global --unset push.default
-git config --global --list
-ls
-rm ~/.gitconfig 
-ls
-ls
-git ls -al
-ls -al
-git status
-git add .
-git commit -m "init2"
-git push -u origin master
-git pull
-git pull -u origin master
 git pull
 git brach master
 git branch master
@@ -122,3 +34,95 @@ git commit -a
 git commit -m "readme change"
 git status
 git push origin master
+ls
+git status
+git ad .
+git add .
+git commit -m "package upate and custom el add"
+git status
+git push origin master
+ls
+cd
+git status
+ls
+cd source/
+ls
+cd docker/app
+ls
+cd dco
+cd douc
+ls
+cd docker/martforyou_docker/
+ls
+cd app
+ls
+cd asyncapp/
+ls
+ls -al
+cd ..
+ls
+cd ..
+ls
+cd edupang_docker/
+ls
+cd app/
+ls
+cd edupang
+ls
+git status
+git rm -r --cached .
+git status
+git add .
+git status
+git reset
+git status
+Untracked files:
+git config
+git --global --list
+git config  --global --list
+git config  --global -list
+git config --global -list
+git config --global list
+git config --global --list
+ls
+git config
+git config
+git config --global
+git config --global --list
+touch /Users/mp/.gitconfig
+git config --global --list
+cat ~/.gitconfig
+git config --global user.name lbs
+git config --global user.email lbs@edupang.com
+git config --global --list
+cat ~/.gitconfig 
+git config --global core.excludesfile = /Users/mp/.gitignore_global
+git status
+cat /Users/mp/.gitignore_global
+git status
+git config --global core.excludesfile /Users/mp/.gitignore_global
+cat ~/.gitconfig
+git status
+cd ..
+ls
+cd site-lisp/
+ls
+curl -o multi-mode.el https://raw.githubusercontent.com/traceypooh/php-htm-mode/master/multi-mode.el
+ls
+ls
+curl -o php-html-mode.el https://raw.githubusercontent.com/traceypooh/php-htm-mode/master/php-htm-mode.el
+ls
+ls
+cd ~/.emacs.d/
+ls
+cd site-lisp/
+ls
+curl -o wmi.el https://raw.githubusercontent.com/sabof/web-mixed-indentation-mode/master/wmi.el
+ls
+ls
+mv *.el ../config/
+ls
+cd ..
+ls
+cd config/
+ls
